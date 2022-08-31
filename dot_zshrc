@@ -1,27 +1,19 @@
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 
-# git aliases
-alias gp="git push"
-alias gpf="git push --force-with-lease"
-alias gpl="git pull"
-alias gr="git rebase"
-alias gc="git add . && cz"
-alias grm="gr origin/main"
-alias gco="git checkout"
-alias gcr="gc && grm"
-alias grp="grm && gpf"
-alias gcrp="gc && grp"
-alias gca="git add . && git commit --amend --no-edit"
-alias gcarp="gca && grp"
-alias gcom="gco main && grp"
-alias gb="git branch"
-alias gsta="git add . && git stash"
-alias gstap="git stash pop"
+source load_zinit.zsh
+
+zinit load zsh-users/zsh-syntax-highlighting
+zinit load zsh-users/zsh-autosuggestions
+zinit load zsh-users/zsh-history-substring-search
+
+source aliases.zsh
 
 # volta (https://github.com/volta-cli/volta)
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+eval "$(starship init zsh)"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
