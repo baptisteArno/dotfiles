@@ -1,3 +1,5 @@
 [user]
 	email = baptiste.arnaud95@gmail.com 
 	name = Baptiste Arnaud
+[diff]
+     algorithm = histogram

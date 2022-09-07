@@ -1,13 +1,13 @@
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 
-source load_zinit.zsh
+source $HOME/load_zinit.zsh
 
 zinit load zsh-users/zsh-syntax-highlighting
 zinit load zsh-users/zsh-autosuggestions
 zinit load zsh-users/zsh-history-substring-search
 
-source aliases.zsh
+source $HOME/aliases.zsh
 
 # volta (https://github.com/volta-cli/volta)
 export VOLTA_HOME="$HOME/.volta"

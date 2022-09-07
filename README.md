@@ -6,10 +6,8 @@ My dotfiles managed by [chezmoi](https://www.chezmoi.io/). Inspired by [cdwilson
 
 1. Set zsh as default shell:
 
-   MacOS:
-
-   ```bash
-   chsh -s /usr/local/bin/zsh
+   ```sh
+   chsh -s $(which zsh)
    ```
 
 2. Install packages: [git](https://git-scm.com/downloads), [fig](https://fig.io/docs/getting-started), [volta](https://docs.volta.sh/guide/getting-started), [chezmoi](https://www.chezmoi.io/).
