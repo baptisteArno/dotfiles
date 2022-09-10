@@ -6,6 +6,7 @@ source $HOME/load_zinit.zsh
 zinit load zsh-users/zsh-syntax-highlighting
 zinit load zsh-users/zsh-autosuggestions
 zinit load zsh-users/zsh-history-substring-search
+zinit load MichaelAquilina/zsh-you-should-use
 
 source $HOME/aliases.zsh
 
@@ -14,6 +15,8 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
 eval "$(starship init zsh)"
+
+export EDITOR="code"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
