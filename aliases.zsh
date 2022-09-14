@@ -19,10 +19,11 @@ alias gstap="git stash pop"
 alias gco="git checkout"
 alias gbd="git branch -D"
 alias gs="git status"
-alias gl="git log --graph --oneline --decorate"
+alias gl="git log --graph --full-history --all --color --pretty=format:'%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s'"
 
 gb() { git branch $1 && gco $1 }
 gcor() { gco $1 && grm }
+gt() {git tag $1 && git push origin $1}
 
 # yalc
 alias yalcp="nr build && yalc publish --push --sig"

@@ -1,6 +1,6 @@
 format = """
-[ ](bold green)$directory$git_branch$git_state
-[ ➜](bold green) """
+[](bold green)$directory$git_branch$git_state
+[➜](bold green) """
 
 [git_branch]
 symbol = " "
