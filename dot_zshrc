@@ -11,7 +11,9 @@ source $HOME/aliases.zsh
 
 eval "$(starship init zsh)"
 
-EDITOR=vim
+EDITOR=nvim
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+eval "$(fnm env --use-on-cd)"

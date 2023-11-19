@@ -48,3 +48,8 @@ alias nrs="nr start"
 alias nrb="nr build"
 alias nrd="nr dev"
 alias nrdm="nr dev:mocking"
+
+alias vim="nvim"
+alias lg="lazygit"
+
+alias codei="code-insiders"

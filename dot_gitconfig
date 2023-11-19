@@ -2,4 +2,9 @@
 	email = baptiste.arnaud95@gmail.com 
 	name = Baptiste Arnaud
 [diff]
-     algorithm = histogram
+  algorithm = histogram
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

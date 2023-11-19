@@ -17,6 +17,18 @@ My dotfiles managed by [chezmoi](https://www.chezmoi.io/). Inspired by [cdwilson
    chezmoi init --apply https://github.com/baptisteArno/dotfiles.git
    ```
 
+## Tmux
+
+1. Install Tmux package manager:
+
+   ```sh
+   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+   ```
+
+2. Install packages.
+   
+   In tmux, open the `.tmux.config` and press `<leader> + I`.
+
 ## Update
 
 ```sh
