@@ -14,7 +14,6 @@ font:
     style: Bold Italic
 
 window:
-  option_as_alt: Both
   # Window padding (changes require restart)
   #
   # Blank space added around the window in pixels. This padding is not scaled by
@@ -122,3 +121,7 @@ colors:
   indexed_colors:
     - { index: 16, color: "#FAB387" }
     - { index: 17, color: "#F5E0DC" }
+
+key_bindings:
+  - { key: Right, mods: Alt, chars: "\x1BF" }
+  - { key: Left,  mods: Alt, chars: "\x1BB" }

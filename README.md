@@ -10,7 +10,7 @@ My dotfiles managed by [chezmoi](https://www.chezmoi.io/). Inspired by [cdwilson
    chsh -s $(which zsh)
    ```
 
-2. Install packages: [git](https://git-scm.com/downloads), [fig](https://fig.io/docs/getting-started), [volta](https://docs.volta.sh/guide/getting-started), [chezmoi](https://www.chezmoi.io/).
+2. Install packages: [git](https://git-scm.com/downloads), [fig](https://fig.io/docs/getting-started), [volta](https://docs.volta.sh/guide/getting-started), [chezmoi](https://www.chezmoi.io/),[bun](https://bun.sh/docs/installation).
 3. Initialize dotfiles:
 
    ```sh
@@ -26,7 +26,7 @@ My dotfiles managed by [chezmoi](https://www.chezmoi.io/). Inspired by [cdwilson
    ```
 
 2. Install packages.
-   
+
    In tmux, open the `.tmux.config` and press `<leader> + I`.
 
 ## Update
