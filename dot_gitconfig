@@ -1,6 +1,7 @@
 [user]
 	email = baptiste.arnaud95@gmail.com 
 	name = Baptiste Arnaud
+	signingkey = /Users/baptistearno/.ssh/id_rsa.pub
 [diff]
   algorithm = histogram
 [filter "lfs"]
@@ -8,3 +9,11 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
