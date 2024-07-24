@@ -50,6 +50,6 @@ alias nrd="nr dev"
 alias nrdm="nr dev:mocking"
 
 alias vim="nvim"
-alias lg="lazygit"
+alias lg="lazygit --use-config-file=\"$XDG_CONFIG_HOME/lazygit/config.yml\""
 
 alias codei="code-insiders"
